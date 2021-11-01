@@ -1,0 +1,464 @@
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    color: inherit;
+    text-decoration: none;
+}
+button{
+    background-color: inherit;
+}
+
+header{
+    background-color: #fff;
+    position: fixed;
+    width: 100%;
+    z-index: 9999;
+}
+
+header .wrap{
+    width: 1200px;
+    height: 60px;
+    margin: 0 auto;
+    background-color: #fff;
+    position: relative;
+    margin-bottom: 80px;
+}
+
+header .util{
+    display: flex;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 14px;
+    color: #595656;
+    font-family: 'SB 어그로 light';
+}
+
+header .util li::after{
+    content: '|';
+    display: inline-block;
+    margin: 0 10px;
+}
+
+header .util li:last-child::after{
+    content: none;
+}
+
+header .box{
+    display: flex;
+}
+
+header .gnb{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 25px;
+    color: #595656;
+    font-family: 'SB 어그로 Medium';
+    font-weight: bold;
+}
+
+header .gnb li{
+    margin-right: 60px;
+    position: relative;
+    text-align: center;
+    line-height: 60px;
+}
+
+header .gnb li:hover .gnb_sub{
+    display: block;
+}
+
+header .gnb .gnb_sub{
+    display: none;
+    width: 180px;
+    margin: 0 auto;
+    text-align: center;
+    background-color: #fff;
+    border: 1px solid #595656;
+    box-sizing: border-box;
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    font-family: 'SB 어그로 Medium';
+    font-weight: normal;
+}
+
+header .gnb .gnb_sub li:hover{
+    background-color: rgba(0, 0, 0, 0.4);
+    color: #fff;
+}
+
+header .gnb .gnb_sub li{
+    font-size: 12px;
+    border-bottom: 1px solid #595656;
+    box-sizing: border-box;
+    width: 100%;
+    font-weight: bold;
+    padding: 10px 0;
+    line-height: normal;
+}
+
+header .gnb .gnb_sub li a{
+    display: block;
+    width: 100%;
+}
+
+.slider .wrap{
+    padding-top: 130px;
+    font-size: 0;
+}
+
+.slider .wrap img{
+    width: 100%;
+    height: auto;
+}
+
+.banner .wrap{
+    width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    padding-top: 80px;
+    padding-bottom: 80px;
+    border-bottom: 2px solid #595656;
+}
+
+.banner .wrap .img{
+    width: 50%;
+}
+
+.banner .wrap img{
+    width: 100%;
+    border-radius: 50%;
+}
+
+.banner .wrap .txt{
+    width: 50%;
+    color: #595656;
+    padding-top: 50px;
+}
+
+.banner .wrap .txt h3{ 
+    font-size: 50px;
+    font-family: 'SB 어그로 Medium';
+    font-weight: bold;
+    padding-left: 150px;
+}
+
+.banner .wrap .txt p{ 
+    font-size: 30px;
+    font-family: 'SB 어그로 Medium';
+    font-weight: bold;
+    padding-top: 30px;
+    padding-left: 75px;
+}
+
+.order .wrap{
+    width: 1200px;
+    margin: 0 auto;
+    padding: 50px 0 150px;
+    border-bottom: 2px solid #595656;
+}
+
+.order .wrap h3{
+    font-size: 45px;
+    font-family: 'SB 어그로 Medium';
+    font-weight: bold;
+    color: #595656;
+}
+
+.order .wrap p{
+    font-size: 35px;
+    font-family: 'SB 어그로 Medium';
+    font-weight: bold;
+    color: #595656;
+    padding-bottom: 100px;
+}
+
+.order .wrap .open{
+    font-size: 70px;
+    font-family: '창원단감아삭';
+    font-weight: bold;
+    color: white;
+    display: block;
+    width: 350px;
+    margin: 0 auto;
+    border-radius: 9999px;
+    background-color: #595656;
+}
+
+.order .wrap .bar{
+    width: 600px;
+    height: 0;
+    margin: 0 auto;
+    background-color: azure;
+    position: relative;
+    background-image: url(../images/order_bar.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center right;
+}
+
+.order .wrap .bar img{
+    width: 600px;
+    font-size: 0;
+}
+
+.order .wrap .bar > div{
+    width: 80px;
+    height: 100px;
+    position: absolute;
+    top: 0;
+    right: 50px;
+}
+
+.order .wrap .bar > div a{
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+.order .wrap form{
+    text-align: center;
+}
+
+.order .wrap form input{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    border: none;
+    width: 60%;
+    height: 60%;
+}
+
+.order .wrap form input::placeholder{
+    display: flex;
+    font-size: 30px;
+    font-family: 'SB 어그로 Medium';
+    font-weight: bold;
+    color: #999;
+    text-decoration: black;
+}
+
+.sub_banner .wrap{
+    width: 1200px;
+    margin: 0 auto;
+    padding: 50px 0 150px;
+    border-bottom: 2px solid #595656;
+}
+
+.sub_banner .wrap h3{
+    font-size: 45px;
+    font-family: 'SB 어그로 Medium';
+    font-weight: bold;
+    color: #595656;
+    padding-bottom: 50px;
+}
+
+.sub_banner .wrap .box{
+    width: 100%;
+    height: 250px;
+}
+
+.sub_banner .wrap .box a{
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+.sub_banner .wrap .box1{
+    background-image: url(../images/wap11.jpg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+}
+
+.sub_banner .wrap .box2{
+    background-image: url(../images/wap12.jpg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+}
+
+.sub_banner .wrap .box3{
+    background-image: url(../images/wap13.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.fnb .wrap{
+    padding: 100px 0;
+    width: 1200px;
+    margin: 0 auto;
+    border-bottom: 2px solid #595656;
+}
+
+.fnb .wrap .txt{
+    display: flex;
+    justify-content: space-between;
+}
+
+.fnb .wrap .txt .con1 h4{
+    font-size: 40px;
+    font-family: 'SB 어그로 Medium';
+    font-weight: bold;
+    color: #595656;
+}
+
+.fnb .wrap .txt .con1 p{
+    font-size: 30px;
+    font-family: 'SB 어그로 Medium';
+    font-weight: bold;
+    color: #595656;
+}
+
+.fnb .wrap .txt .con2{
+    width: 200px;
+    height: 50px;
+    background-color: #595656;
+    border-radius: 9999px;
+}
+
+.fnb .wrap .txt .con2 p{
+    line-height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+    font-family: '창원단감아삭';
+    font-weight: bold;
+    color: white;
+}
+
+.fnb .wrap .txt .con2 a{
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+.fnb .wrap .con{
+    display: flex;
+    justify-content: space-around;
+}
+
+.fnb .wrap .con .box{
+    width: 300px;
+    height: 300px;
+}
+
+.fnb .wrap .con .box .txt{
+    position: relative;
+    width: 200px;
+    height: 200px;
+    margin: 100px auto 0;
+    border-radius: 50%;
+    background-color: #595656;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.fnb .wrap .con .box .txt p{
+    font-size: 30px;
+    font-family: '창원단감아삭';
+    font-weight: bold;
+    color: #fff;
+}
+
+.fnb .wrap .con .box1 .txt::after{
+    position: absolute;
+    bottom: 80%;
+    content: '';
+    display: block;
+    width: 100px;
+    height: 100px;
+    margin: 0 auto;
+    background-image: url(../images/bg_m_s_icon02.png);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.fnb .wrap .con .box2 .txt::after{
+    position: absolute;
+    bottom: 80%;
+    content: '';
+    display: block;
+    width: 100px;
+    height: 100px;
+    margin: 0 auto;
+    background-image: url(../images/bg_m_s_icon03.png);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.fnb .wrap .con .box3 .txt::after{
+    position: absolute;
+    bottom: 80%;
+    content: '';
+    display: block;
+    width: 100px;
+    height: 100px;
+    margin: 0 auto;
+    background-image: url(../images/bg_m_s_icon01.png);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.footer .wrap{
+    width: 1200px;
+    margin: 0 auto;
+    padding-top: 50px;
+}
+
+.footer .ads{
+    padding-bottom: 50px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer .ads .txt{
+    display: flex;
+}
+
+.footer .ads .txt li{
+    font-size: 14px;
+    color: black;
+}
+
+.footer .ads .txt li::after{
+    content: '|';
+    display: inline-block;
+    margin: 0 10px;
+    color: black;
+}
+
+.footer .ads .txt li:nth-child(2){
+    color: red;
+}
+
+.footer .ads .txt li:nth-child(2)::after{
+    color: #666;
+}
+
+.footer .ads .txt li:last-child:after{
+    content: none;
+}
+
+.footer .ads .con .icon{
+    display: flex;
+    justify-content: center;
+    padding-left: 50px;
+}
+
+.footer .ads .con .icon li{
+    margin-right: 15px;
+}
+
+.footer .cpr{
+    font-size: 12px;
+    text-align: center;
+}
